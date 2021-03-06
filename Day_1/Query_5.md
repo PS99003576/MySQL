@@ -3,6 +3,6 @@
 # Query:
 ## select * from movie where Language like 'T%';
 
-![Alt Text](https://github.com/PS99003576/MySQL/blob/main/Query_5.png)<br />
+![Alt Text](https://github.com/PS99003576/MySQL/blob/main/Images/Query_5.png)<br />
 
 
