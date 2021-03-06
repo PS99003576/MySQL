@@ -3,4 +3,4 @@
 # Query:
 ## select Releasedate from movie where Moviename = 'zero';
 
-![Alt Text](https://github.com/PS99003576/MySQL/blob/main/Query_10.png)<br />
+![Alt Text](https://github.com/PS99003576/MySQL/blob/main/Images/Query_10.png)<br />
