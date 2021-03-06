@@ -3,4 +3,4 @@
 # Query:
 ## select Heroname from movie where Heroine = 'Amy';
 
-![Alt Text](https://github.com/PS99003576/MySQL/blob/main/Query_11.png)<br />
+![Alt Text](https://github.com/PS99003576/MySQL/blob/main/Images/Query_11.png)<br />
