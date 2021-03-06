@@ -4,5 +4,5 @@
 # Query:
 ## select Moviename from movie where heroname = 'Ayushmann';
 
-![Alt Text](https://github.com/PS99003576/MySQL/blob/main/Query_2.png)<br />
+![Alt Text](https://github.com/PS99003576/MySQL/blob/main/Images/Query_2.png)<br />
 
