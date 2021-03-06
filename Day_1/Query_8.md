@@ -3,5 +3,5 @@
 # Query:
 ## select count(Moviename) from movie where Movietype like '%Thriller%';
 
-![Alt Text](https://github.com/PS99003576/MySQL/blob/main/Query_8.png)<br />
+![Alt Text](https://github.com/PS99003576/MySQL/blob/main/Images/Query_8.png)<br />
 
