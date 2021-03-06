@@ -3,5 +3,5 @@
 # Query:
 ## select Moviename from movie where Length = (select min(Length) from movie);
 
-![Alt Text](https://github.com/PS99003576/MySQL/blob/main/Query_4.png)<br />
+![Alt Text](https://github.com/PS99003576/MySQL/blob/main/Images/Query_4.png)<br />
 
