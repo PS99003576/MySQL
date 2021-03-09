@@ -21,8 +21,8 @@ public class ProjectMain {
 		System.out.println("6. Logout");
 		int n= Integer.parseInt(br.readLine());
 		
-		if(n==1)
-		{
+		switch(n) {
+		case 1:
 			System.out.println("Enter the Team Id: "); 
 			int tid=Integer.parseInt(br.readLine());
 			System.out.println("Enter the Team Name: ");
@@ -59,16 +59,15 @@ public class ProjectMain {
 		    Player p=new Player(pid,pname,pdate,pnation,pskills,pruns,pwic,pnum,pteam);
 		    PlayerDao pd=new PlayerDao();
 		    pd.insertPlayer(p);
-		}
-		else if(n==2)
-		{
+			break;
+			
+		case 2:
 			System.out.println("Enter the Player Name: "); 
 			String name=br.readLine();
-			PlayerDao pd=new PlayerDao();
-		    pd.getAll(name);
-		}
-		else if(n==3)
-		{
+			PlayerDao pd1=new PlayerDao();
+		    pd1.getAll(name);
+			break;
+		case 3:
 			System.out.println("Enter table to update:");
 			System.out.println("1.Team 2.Player");
 			int u=Integer.parseInt(br.readLine());
@@ -77,54 +76,52 @@ public class ProjectMain {
 		    	System.out.println("Enter Team ID: ");
 		    	int id=Integer.parseInt(br.readLine());
 		    	System.out.println("Enter new Team Name: ");
-		    	String name=br.readLine();
-				TeamDao pd=new TeamDao();
-			    pd.updateTeam(id,name);
+		    	String name1=br.readLine();
+				TeamDao pd11=new TeamDao();
+			    pd11.updateTeam(id,name1);
 		    }
 		    else if(u==2)		
 		    {
 		    	System.out.println("Enter Playet ID: ");
 		    	int id=Integer.parseInt(br.readLine());
 		    	System.out.println("Enter new Player Name: ");
-		    	String name=br.readLine();
-				PlayerDao pd=new PlayerDao();
-			    pd.updatePlayer(id,name);
+		    	String name1=br.readLine();
+				PlayerDao pd11=new PlayerDao();
+			    pd11.updatePlayer(id,name1);
 		    }
-		}
-		else if(n==4)
-		{
-			PlayerDao pd=new PlayerDao();
-		    pd.showPlayer();
-		}
-		else if(n==5)
-		{
+			break;
+		case 4:
+			PlayerDao pd11=new PlayerDao();
+		    pd11.showPlayer();
+			break;
+		case 5:
 			System.out.println("1. View Players based on Team");
 			System.out.println("2. View Players based on Skills & Team");
 			int v=Integer.parseInt(br.readLine());
 			if(v==1)
 			{
 				System.out.println("Enter Team Name: ");
-				String tname=br.readLine();
-				TeamDao pd=new TeamDao();
-			    pd.teamPlayer(tname);
+				String tname1=br.readLine();
+				TeamDao pd111=new TeamDao();
+			    pd111.teamPlayer(tname1);
 			}
 			else if(v==2)
 			{
 				System.out.println("Enter Team Name: ");
-				String tname=br.readLine();
+				String tname1=br.readLine();
 				System.out.println("Enter Player Skill: ");
 				String tskill=br.readLine();
-				TeamDao pd=new TeamDao();
-			    pd.skillPlayer(tname,tskill);
+				TeamDao pd111=new TeamDao();
+			    pd111.skillPlayer(tname1,tskill);
 			}
-
-		}
-		else if(n == 6) {
+			break;
+		case 6:
 			System.out.println("Logged out succcessfully....");
 			System.exit(0);
-		}
-
+			break;
 		
-	}
+		}
+		
+}
 }
 }
